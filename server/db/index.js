@@ -1,14 +1,18 @@
 //this is the access point for all things database related!
 
-const db = require('./db')
+const db = require("./db");
 
-const User = require('./models/User')
+const Food = require("./models/Food");
+const Beer = require("./models/Beer");
+const Wine = require("./models/Wine");
 
 //associations could go here!
 
 module.exports = {
   db,
   models: {
-    User,
+    Food,
+    Beer,
+    Wine,
   },
-}
+};

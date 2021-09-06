@@ -1,26 +1,31 @@
-import React from 'react'
-import {connect} from 'react-redux'
+import React from "react";
+import { connect } from "react-redux";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import ImageList1 from "./ImageList1";
+import FoodList from "./FoodList";
+
+const useStyles = makeStyles((theme) => ({
+  div: {
+    background: "#24187B",
+  },
+}));
 
 /**
  * COMPONENT
  */
-export const Home = props => {
-  const {username} = props
+export const Home = (props) => {
+  const classes = useStyles();
 
   return (
     <div>
-      <h3>Welcome, {username}</h3>
+      <ImageList1 />
+      <FoodList />
     </div>
-  )
-}
+  );
+};
 
 /**
  * CONTAINER
  */
-const mapState = state => {
-  return {
-    username: state.auth.username
-  }
-}
 
-export default connect(mapState)(Home)
+export default Home;

@@ -3,7 +3,8 @@ body {
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
+  color: white;
 }
 
 label {
@@ -18,4 +19,112 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.navbar-div {
+  background: #24187B;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+#navbar {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 100;
+}
+
+#foodlist {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  margin-bottom: 2.8%;
+  background-color: tan;
+}
+
+.component {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+  margin-top: 2%;
+  height: 90%;
+}
+
+.component-title {
+  font-size: 50px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#map-container {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#menu-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+
+#beer-container {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+#wine-container {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  #foodlist {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 30px;
+    margin-bottom: 6%;
+    background-color: tan;
+  }
+
+  .navbar-div {
+    background: #24187B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+  }
+
+  .component {
+  text-align: center;
+  margin-top: 10%;
+  height: 60%;
+  }
+  .component-title {
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+
+  #map-container {
+    width:80%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
